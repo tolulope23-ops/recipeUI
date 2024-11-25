@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar for Recipe List -->
+        <aside class="sidebar">
+            <h2>All Recipes</h2>
+            <ul id="recipeList">
+                <!-- Dynamic Recipe List Items Will Be Injected Here -->
+            </ul>
+        </aside>
+
+        <!-- Main Content for Viewing Recipe Details -->
+        <section class="content">
+            <h2>Recipe Details</h2>
+            <div id="recipeDetails">
+                <!-- Details of Selected Recipe Will Be Displayed Here -->
+            </div>
+        </section>
+
+        <!-- Form Panel for Adding/Editing Recipes -->
+        <section class="form-panel">
+            <h2 id="formTitle">Add New Recipe</h2>
+            <form id="recipeForm" autocomplete="off">
+                <input type="text" id="name" placeholder="Recipe Name" required>
+                <textarea id="ingredient" placeholder="Ingredients" required></textarea>
+                <textarea id="instruction" placeholder="Instructions" required></textarea>
+                <select id="mealType">
+                    <option value="breakfast">breakfast</option>
+                    <option value="lunch">lunch</option>
+                    <option value="dinner">dinner</option>
+                    <option value="snack">snack</option>
+                </select>
+                <label>
+                    <input type="checkbox" id="favorite"> Mark as Favorite
+                </label>
+                <button type="submit">Save Recipe</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
