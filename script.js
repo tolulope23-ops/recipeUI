@@ -1,5 +1,4 @@
-// script.js
-const API_URL = 'http://localhost:3000/api/v1/Recipes'; // Replace with actual API URL
+const API_URL = 'http://localhost:3000/api/v1/Recipes';
  
 const recipeForm = document.getElementById('recipeForm');
 
